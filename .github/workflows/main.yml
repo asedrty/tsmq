@@ -11,11 +11,11 @@ on:
           - '4 台机器 (默认稳妥，推荐 50 万以下)'
           - '8 台机器 (极速并发，推荐 50 万以上)'
           - 'custom (使用下方自定义输入)'
-        default: '4 台机器 (默认稳妥，推荐 50 万以下)'
+        default: '20 台机器 (默认稳妥，推荐 50 万以下)'
       custom_shards:
         description: '自定义分片机器数 (选 custom 时生效，范围 1~20)'
         required: false
-        default: '4'
+        default: '20'
       auth_mode:
         description: '认证探测模式'
         required: true
@@ -31,15 +31,15 @@ on:
       concur:
         description: '深度验证并发数 (-c)'
         required: false
-        default: '100'
+        default: '500'
       ping_concur:
         description: 'TCPing 快速预筛并发数 (-p)'
         required: false
-        default: '500'
+        default: '3000'
       ping_timeout:
         description: 'TCPing 超时秒数 (-pt，支持小数)'
         required: false
-        default: '1.5'
+        default: '3'
       save_mode:
         description: '结果写回私库策略'
         required: true
