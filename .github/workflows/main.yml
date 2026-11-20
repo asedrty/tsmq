@@ -11,7 +11,7 @@ on:
           - '4 台机器 (默认稳妥，推荐 50 万以下)'
           - '8 台机器 (极速并发，推荐 50 万以上)'
           - 'custom (使用下方自定义输入)'
-        default: '20 台机器 (默认稳妥，推荐 50 万以下)'
+        default: '4 台机器 (默认稳妥，推荐 50 万以下)'
       custom_shards:
         description: '自定义分片机器数 (选 custom 时生效，范围 1~20)'
         required: false
